@@ -1,7 +1,5 @@
 import java.io.FileNotFoundException;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class Statistics {
 
@@ -14,8 +12,13 @@ public class Statistics {
 
 
     public Set<String> getGoalScorers() {
-
-        return null;
+        Set<String> goalScorers = new HashSet<>();
+        for (MatchResult mr : matchResults){
+            for (String goalscorer : mr.getGoalScorers()){
+                goalScorers.add(goalscorer);
+            }
+        }
+        return goalScorers;
     }
 
     public Map<String, Integer> totalGoalsPerPlayer() {
