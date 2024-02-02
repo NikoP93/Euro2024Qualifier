@@ -39,6 +39,4 @@ public class FileReaderTest {
         MatchResult actualMatchResult = mFR.readFile().get(0);
         assertEquals(expectedMatchResult, actualMatchResult);
     }
-
-
 }
