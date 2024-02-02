@@ -10,7 +10,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FileReaderTest {
 
-    MatchResult matchResult;
     String file = "Euro2024QualifyingRound.csv";
     MatchResultFileReader mFR;
 
