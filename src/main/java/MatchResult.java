@@ -10,7 +10,7 @@ public class MatchResult {
         this.goalsScorers = goalsScorers;
     }
 
-    public List<String> getGoalsScorers() {
+    public List<String> getGoalScorers() {
         return goalsScorers;
     }
 
